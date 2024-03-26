@@ -1,0 +1,20 @@
+.form {
+  padding-top: 1rem;
+  padding: 1.5rem;
+  padding: 1.5rem;
+  height: 150vh;
+}
+@media (min-width: 768px) {
+  .form {
+    padding-top: 2.5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .form {
+    padding-top: 5rem;
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
+}

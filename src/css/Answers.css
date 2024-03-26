@@ -1,0 +1,123 @@
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.option.correct {
+  border: 3px solid hsla(120, 93%, 54%, 1);
+  .letter {
+    color: white;
+  }
+  .option-rectangle {
+    background-color: hsla(120, 93%, 54%, 1);
+  }
+}
+.option.incorrect {
+  border: 3px solid rgb(245, 46, 46);
+  .letter {
+    color: white;
+  }
+  .option-rectangle {
+    background-color: rgb(245, 46, 46);
+  }
+}
+.answer-item:focus-within {
+  border: 3px solid var(--purple);
+  border-radius: 12px;
+  .letter {
+    color: white;
+  }
+  .option .option-rectangle {
+    background-color: var(--purple);
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 12px;
+  border-radius: 12px;
+  /* background: rgb(255, 255, 255); */
+  font-family: "Rubic-Medium";
+  /* color: rgb(49, 62, 81); */
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option-rectangle {
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.38rem;
+  /* background: rgb(244, 246, 250); */
+  text-align: center;
+}
+
+.answer-item:hover:not(.selected) .option-rectangle {
+  background-color: hsla(277, 100%, 95%, 1);
+}
+
+.answer-item:hover:not(.selected) .letter {
+  color: hsla(277, 91%, 57%, 1);
+}
+.answer-text {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.answer-item {
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .option {
+    padding: 12px;
+    border-radius: 24px;
+    font-size: 1.75rem;
+  }
+  .answer-item:focus-within {
+    border-radius: 24px;
+  }
+  .option-rectangle {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+  .answer-text {
+    margin-left: 2rem;
+  }
+  .main-content {
+    gap: 1.5rem;
+  }
+  .answer-item {
+    border-radius: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .option {
+    padding: 18px 20px;
+    border-radius: 24px;
+  }
+  .option-rectangle {
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    border-radius: 0.75rem;
+  }
+  .main-right {
+    margin-left: 60px;
+  }
+  .answer-item {
+    border-radius: 24px;
+  }
+}

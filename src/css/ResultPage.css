@@ -1,0 +1,121 @@
+.text-1 {
+  /*     
+    color: rgb(49, 62, 81); */
+  font-family: "Rubic";
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 2rem;
+}
+.text-2 {
+  margin: 0;
+  /* color: rgb(49, 62, 81); */
+  font-family: "Rubic-Medium";
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.result {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 48px;
+  margin-top: 40px;
+  border-radius: 0.75rem;
+  box-shadow: 0rem 1rem 2.5rem 0rem rgba(143, 160, 193, 0.14);
+  /* background-color: hsla(0,0%,101%,1); */
+}
+
+.result-option {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-play-again {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 0.75rem;
+  color: hsla(0, 0%, 101%, 1);
+  font-family: "Rubic-Medium";
+  font-size: 1.13rem;
+  font-weight: 500;
+  background: rgb(167, 41, 245);
+  width: 100%;
+  border: none;
+}
+.img-rectangle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+.html {
+  background-color: #fff1e9;
+}
+
+.css {
+  background-color: #e0fdef;
+}
+
+.javascript {
+  background-color: #ebf0ff;
+}
+.accessibility {
+  background-color: #f6e7ff;
+}
+.subject-title {
+  /* color: rgb(49, 62, 81); */
+  font-family: "Rubic-Medium";
+  font-size: 1.13rem;
+  font-weight: 500;
+  margin: 0;
+}
+.correct-answer-number {
+  /* color: rgb(49, 62, 81); */
+  font-family: "Rubic-Medium";
+  font-size: 5.5rem;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.text-3 {
+  margin: 0;
+  padding-top: 1rem;
+  /* color: rgb(98, 108, 127); */
+  font-family: "Rubic";
+  font-size: 1.13rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .result-page {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 4rem;
+    justify-content: space-between;
+  }
+  .text-1 {
+    font-size: 4rem;
+  }
+  .text-2 {
+    font-size: 4rem;
+  }
+  .subject-title {
+    font-size: 1.75rem;
+  }
+  .correct-answer-number {
+    font-size: 9rem;
+  }
+  .text-3 {
+    font-size: 1.5rem;
+  }
+  .btn-play-again {
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+}

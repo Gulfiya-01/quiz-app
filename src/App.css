@@ -1,0 +1,65 @@
+.dark-mode {
+  background-image: url(/public/images/pattern-background-mobile-dark.svg);
+  background-color: hsla(215, 24%, 25%, 1);
+  color: hsla(0, 0%, 101%, 1);
+}
+
+.light-mode {
+  background-image: url(/public/images/pattern-background-mobile-light.svg);
+  background-color: hsla(219, 37%, 97%, 1);
+  color: hsla(215, 24%, 25%, 1);
+}
+
+.dark-mode .letter {
+  color: hsla(215, 24%, 25%, 1);
+}
+
+.dark-mode label {
+  background-color: hsla(219, 28%, 67%, 0.14);
+  box-shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+}
+.dark-mode .switch{
+  background-color:  hsla(215, 24%, 25%, 1);
+}
+.light-mode label {
+  background-color: hsla(219, 37%, 97%, 1);
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+}
+.label:hover {
+  background: hsla(277, 100%, 95%, 1);
+}
+.light-mode .option-rectangle {
+  background-color: hsla(219, 28%, 67%, 0.14);
+}
+.dark-mode .option-rectangle {
+  background-color: hsla(219, 37%, 97%, 1);
+}
+
+.dark-mode .option {
+  background-color: hsla(219, 28%, 67%, 0.14);
+  box-shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+}
+
+.light-mode .option {
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+  background-color: hsla(219, 37%, 97%, 1);
+}
+
+@media (min-width: 1024px) {
+  .dark-mode {
+    background-image: url(/public/images/pattern-background-desktop-dark.svg);
+  }
+
+  .light-mode {
+    background-image: url(/public/images/pattern-background-desktop-light.svg);
+  }
+}
+@media (min-width: 768px) {
+  .dark-mode {
+    background-image: url(/public/images/pattern-background-tablet-dark.svg);
+  }
+
+  .light-mode {
+    background-image: url(/public/images/pattern-background-tablet-light.svg);
+  }
+}

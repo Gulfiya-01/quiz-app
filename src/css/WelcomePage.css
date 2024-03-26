@@ -1,0 +1,95 @@
+.titleRegular {
+  /* color: rgb(49, 62, 81); */
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-top: 2rem;
+  width: 100%;
+}
+.titleBold {
+  margin: 0;
+  /* color: rgb(49, 62, 81); */
+  font-family: "Rubic-Medium";
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.subTitle {
+  margin: 0;
+  font-family: "Rubic-Italic";
+  font-weight: 500;
+  /* color: rgb(98, 108, 127); */
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 1rem;
+  margin-bottom: 40px;
+}
+.subject {
+  display: none;
+  /* color: rgb(49, 62, 81); */
+}
+.img-rectangle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+.html {
+  background-color: #fff1e9;
+}
+
+.css {
+  background-color: #e0fdef;
+}
+
+.javascript {
+  background-color: #ebf0ff;
+}
+.accessibility {
+  background-color: #f6e7ff;
+}
+.subjectContainer {
+  margin-left: 2rem;
+}
+.label {
+  padding: 12px;
+  border-radius: 12px;
+  /* background: rgb(255, 255, 255); */
+  font-family: "Rubic-Medium";
+
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.quizzesBlocks {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .welcome-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    justify-content: space-between;
+  }
+  .titleRegular {
+    margin-top: 0;
+    font-size: 4rem;
+  }
+
+  .titleBold {
+    font-size: 4rem;
+  }
+  .subTitle {
+    font-size: 1.25rem;
+
+    margin-top: 3rem;
+  }
+  .quizzesBlocks {
+    margin-left: 3rem;
+  }
+}
